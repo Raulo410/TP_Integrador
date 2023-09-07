@@ -46,8 +46,10 @@ let addTask = ()=>{
    let updateStats= ()=>{
     let element = list.querySelectorAll('div');
     let checkbox = list.querySelectorAll('input[type="checkbox"]:checked')
-    stats.innerHTML=`<p>Tareas pendientes: ${element.length-1} - Tareas completadas: ${checkbox.length} </p>`
-   };
+    stats.innerHTML=`<p>Tareas pendientes: ${element.length-1} - Tareas completadas: ${checkbox.length} </p>
+                        <hr>`
+    //hasta aca`
+    };
 
    let deleteTask = (id)=>{
         let taskToDelete = document.getElementById(id);
