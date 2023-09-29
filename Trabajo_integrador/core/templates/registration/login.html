@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+  <title>Pagina de Inicio</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}">
+</head>
+<body>
+
+<div class="signupFrm">
+    <form action="" method="POST" class="form">
+         {% csrf_token %}
+
+         <h1 class="title">Inicio</h1>
+    
+      <div class="inputContainer">
+        <input type="text" class="input" name="username" >
+        <label for="" class="label">Direccion de correo</label>
+      </div>
+    
+      <div class="inputContainer">
+        <input type="password" class="input" name="password">
+        <label for="" class="label">Ingrese Clave</label>
+      </div>
+      <input type="submit" class="submitBtn" value="Ingresar">
+
+      <input type="submit" class="submitBtn" value="registrar" formaction="registro.html"> 
+
+       <a href="contacto.html">Quienes somos - Consultas</a>
+
+      </form>
+  </div>
+
+</body>
+</html>
